@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Test artifacts
+test_edit.docx
+test_out*.txt
+test.pptx
+test.pdf
+copy_*.txt
+to_delete*.txt
+rejected*.txt
+fmt.txt
+write_test.txt
+merged*.csv
+new_folder_*/
+a*[0-9]/
+out_test.xlsx
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+{
+  "name": "hello-skill",
+  "version": "1.0.0",
+  "description": "A demo skill that adds a greeting tool",
+  "tools": [
+    {
+      "name": "say_hello",
+      "function": "say_hello",
+      "description": "Say hello to someone"
+    }
+  ],
+  "requirements": []
+}
