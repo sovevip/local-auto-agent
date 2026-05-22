@@ -1,0 +1,19 @@
+{
+  "name": "local-auto-agent",
+  "version": "2.0",
+  "description": "Cloud plan + local Qwen 7B execution — offline-first desktop automation agent",
+  "status": {
+    "tools": 68,
+    "tests": "244+ PASS",
+    "fewshot": "92% tool selection (batch test)",
+    "agent_server": "running (watches claude_plan.json)",
+    "agent_exec_loop": "Phase 5: shared prompt builder (28 core tools)",
+    "github": "sovevip/local-auto-agent"
+  },
+  "next": [
+    "Complete local_agent.py execution loop testing",
+    "Implement cloud_bridge.py DeepSeek planner",
+    "Publish hello-skill as GitHub template",
+    "Write remaining test cases for new tools"
+  ]
+}
