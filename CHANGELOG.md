@@ -1,13 +1,8 @@
 ## v3.0.1 (2026-05-22)
 
 ### Fixed
-- PLANNER_PROMPT: add nested key example `{step0.output.memory.percent}`
-- execute_plan: safe utf-8 error message encoding
-- test_complex.py: force utf-8 stdout to avoid GBK encoding crash
-- test_complex.py: demonstrate correct nested key syntax in prompt
-
-### Architecture Verified
-- Cloud planner correctly generates 5-step plans with risk labels
-- validate_plan detects risk distribution (low:3, medium:2 for system report)
-- Step references `{step.output.nested.key}` resolve correctly
-- Document generation produces real data, not placeholders
+- execute_plan: nested key regex changed from `?` to `*` for multi-level references
+- agent_server: watch_claude_plans now async with 90s thread timeout
+- agent_server: execute_plan runs in daemon thread, doesn't block plan scanning
+- test_complex.py: utf-8 stdout wrapper
+- PLANNER_PROMPT: nested key example `{step0.output.memory.percent}`
